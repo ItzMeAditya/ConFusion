@@ -41,8 +41,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#mybtn" class="text-decoration-none"><button class="btn btn-warning btn-block">Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -57,21 +60,25 @@
                 <div class="media">
                     <img src="img/uthappizza.png" alt="unthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body mt-0">
-                        <h2>Uthappizza</h2>
+                        <h2>Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pills bg-success ml-3">$ 4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="row align-items-center row-content">
             <div class="col-4 col-sm-5">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-8 col-sm-7">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body mt-0">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img src="img/buffet.png" alt="buffet" class="d-flex ml-2 img-thumbnail align-self-center">
+                </div>
             </div>
         </div>
 
@@ -86,6 +93,39 @@
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content" id="mybtn">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-2">Number of Guests</dt>
+                            <form class="form-group col-sm">
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio" checked> 1</label>
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio"> 2</label>
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio"> 3</label>
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio"> 4</label>
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio"> 5</label>
+                                <label class="mr-2 radio-inline"><input type="radio" name="optradio"> 6</label>
+                            </form>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-sm-2">Date & Time</dt>
+                            <form>
+                                <label>
+                                    <input type="text" placeholder="Date">
+                                </label>
+                                <label>
+                                    <input type="text" placeholder="Time">
+                                </label>
+                            </form>
+                        </dl>
+                        <button type="submit" class="btn btn-primary offset-sm-2">Reserve</button>
                     </div>
                 </div>
             </div>
